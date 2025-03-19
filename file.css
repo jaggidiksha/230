@@ -1,0 +1,33 @@
+h1{
+    color:red;
+    text-align: center;
+    background-color: aquamarine;
+}
+.para1{
+    color: aqua;
+    background-color: blue;
+}
+#para2{
+    color: brown;
+    background-color: yellow;
+}
+*{
+    font-size:20px;
+    background-color: black;
+    color: white;
+}
+.div1{
+    display: flex;
+}
+.div2 img{
+    height: 200px;
+    width: 300px;
+}
+.div2{
+    display: flex;
+    justify-content:center;
+}
+/* p{
+    color: rgb(210, 242, 65);
+    background-color: blueviolet;
+} */
