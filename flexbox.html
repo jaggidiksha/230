@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            border:2px solid red;
+            height:400px;
+            display: flex;
+            /* flex-direction: row;
+            flex-wrap:wrap-reverse; */
+            gap:20px;
+            /* row-gap: 10px;
+            column-gap: 30px; */
+            flex-flow:wrap row;
+            justify-content: flex-start;
+            /* align-items: center;  */
+        }
+        .box{
+            border:2px solid green;
+            width:100px;
+        }
+        #box1{
+            order:1;
+        }
+        #box2{
+            order:2;
+            flex-grow: 1;
+        }
+        #box5{
+            width:400px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box" id="box1">box1</div>
+        <div class="box" id="box2">box2</div>
+        <div class="box">box3</div>
+        <div class="box">box4</div>
+        <div class="box" id="box5">box5</div>
+        <div class="box">box6</div>
+        <div class="box">box7</div>
+        <div class="box">box8</div>
+    </div>
+    <!--
+    parent properties:
+    1. flex-direction: row (by default )
+                    :column
+                    :column-reverse
+                    :row-reverse
+
+    flex-wrap:wrap;
+              :wrap-reverse;
+
+    gap:20px;
+    row-gap: 10px;
+    column-gap: 30px;
+
+    flex-flow:(combination of flex-wrap and flex-direction)
+             :wrap row;
+
+    justify-content:space-evenly;
+                   :space-between;
+                   :space-around;
+                   :center;
+                   :flex-start;
+                   :flex-end;
+
+
+    align-items: flex-start;
+               : flex-end;
+               :center;
+
+
+
+               CHILD PROPERTIES:
+               order: 0(bydefault )
+               higher the order that element will be placed at the end 
+
+               flex-grow: 0 (bydefalut) 
+               element having the highest order can be given with flex-grow property
+
+               flex-basis: defined the initial width of child along main axis
+    -->
+</body>
+</html>
