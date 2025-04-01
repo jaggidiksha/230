@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            background-color: aquamarine;
+            height: 200px;
+            width:200px;
+            box-shadow: 10px 30px 20px green;  
+            /* transition: width 2s; */
+            /* transition-property: width;
+            transition-duration: 4s;
+            transition-timing-function: ease-in;
+            transition-delay: 1s; */
+            transition: width 3s linear 1s;
+        }
+        div:hover{
+            /* background-color:pink; */
+            width:400px;
+        
+        }
+        h1::before{
+            content: "$";
+        }
+        h1::after{
+            content:"$"
+        }
+h1{
+    text-shadow: 20px 10px 2px pink;
+}
+
+    </style>
+</head>
+<body>
+    <h1>Excellence</h1>
+    <div>
+
+    </div>
+    <!--
+    pseudo classes : used to define the specific state of an element , called with :
+ ex:hover 
+
+    pseudo elements : used to design a special / extra content in elements  , called with ::
+
+
+    trasition-property :
+    transition-duration:
+    transition-timing-function :
+    ease-in-out :slow start and slow end 
+    ease-in :slow start
+    ease-out :slow end
+    linear:same speed
+    transition-delay :
+
+    -->
+</body>
+</html>
