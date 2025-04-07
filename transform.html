@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* div{
+            height:300px;
+            width:300px;
+            background-color: aquamarine;
+            transition: width 2s linear 1s,transform 2s;
+        }
+        div:hover{
+            width:400px;
+            background-color: blue;
+            transform: rotateZ(30deg);
+        } */
+         h1{
+            text-align: center;
+         }
+         .box{
+            display: flex;
+         }
+         @media(min-width:1024px){
+            h1{
+                color: red;
+                background-color: aquamarine;
+            }
+            p{
+                color: rgb(250, 11, 63);
+                background-color: rgb(150, 195, 214);
+                font-size: 30px;
+            }
+         }
+
+         @media (max-width:768px){
+            .box{
+                display: block;
+            }
+            img{
+                width:100%;
+                height:auto;
+            }
+            p{
+                color: blue;
+                font-size: 40px;
+                font-weight: bold;
+            }
+
+            h1{
+                color: cadetblue;
+                background-color: brown;
+            }
+         }
+
+         @media (min-width:769px)  and (max-width:1023px){
+            p{
+                font-size:20px;
+                color: brown;
+            }
+            img{
+                height: 500px;
+                width:500px;
+            }
+            h1{
+                color: blueviolet;
+            }
+         }
+    </style>
+</head>
+<body>
+    <h1>EXCELLENCE TECHNOLOGY</h1>
+    <DIV class="box">
+        <img src="https://images.unsplash.com/photo-1654842805820-20159a52ba74?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTB8fGVkJTIwdGVjaHxlbnwwfHwwfHx8MA%3D%3D" alt="">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae quidem quibusdam nesciunt provident voluptatem sapiente enim ipsa, esse ipsum necessitatibus omnis minus, ipsam incidunt, error eos accusantium numquam eaque eum.</p>
+    </DIV>
+   <!--
+    
+   responsiveness
+
+   @media 
+   max-width:768px    (mobile screen size)
+
+   min-width:769px and max-width:1023px      (tablet screen size)
+
+   min-width:1024px    (laptop screen size)
+   
+   -->
+    
+</body>
+</html>
