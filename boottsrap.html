@@ -1,0 +1,92 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .navbarr{
+            background-color: aquamarine;
+        }
+        .image img{
+            height:200px;
+
+       
+        }
+        .z {
+            display: flex;
+            gap:40px;
+        }
+      
+    </style>
+</head>
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
+    <nav class="navbar navbar-expand-lg navbarr">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">AMAZON</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Contact
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Login</a></li>
+                  <li><a class="dropdown-item" href="#">Signup</a></li>
+                  <li><hr class="dropdown-divider"></li>
+            
+                </ul>
+              </li>
+         
+            </ul>
+      
+          </div>
+        </div>
+      </nav>
+
+
+      <div class="x"  style="text-align: center;">
+        <button class="btn btn-success">on</button>
+<button class="btn btn-danger">off</button>
+      </div>
+    <!--carousel-->
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active image">
+         <div class="z">
+            <img src="https://plus.unsplash.com/premium_photo-1670002415458-a5b2816bb79c?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG1hcnR8ZW58MHx8MHx8fDA%3D"  alt="...">
+            <img src="https://plus.unsplash.com/premium_photo-1670002415458-a5b2816bb79c?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG1hcnR8ZW58MHx8MHx8fDA%3D"  alt="...">
+            <img src="https://plus.unsplash.com/premium_photo-1670002415458-a5b2816bb79c?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG1hcnR8ZW58MHx8MHx8fDA%3D"  alt="...">
+            <img src="https://plus.unsplash.com/premium_photo-1670002415458-a5b2816bb79c?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fG1hcnR8ZW58MHx8MHx8fDA%3D" alt="...">
+         </div>
+          </div>
+          <div class="carousel-item image">
+            <img src="https://images.unsplash.com/photo-1703424729984-18c29ceea6af?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fG1hcnR8ZW58MHx8MHx8fDA%3D" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item image">
+            <img src="https://images.unsplash.com/photo-1652269959545-d40424b665f7?w=700&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fG1hcnR8ZW58MHx8MHx8fDA%3D" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</body>
+</html>
