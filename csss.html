@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            height:200px;
+            width:300px;
+            background-color: aquamarine;
+            transition:width 3s linear 0s,transform 2s;
+        }
+        div:hover{
+            width:500px;
+            /* rotate: 180deg; */
+              /* transform: rotate(30deg); */
+            /* translate: (20px,30px); */
+            /* transform:translate(20px,60px) ; */
+            /* transform: scale(3,2);
+           transform: skew(30deg,20deg); */
+           /* transform: rotateX(90deg);  */
+            /* transform: rotateZ(130deg); */
+        }
+    </style>
+</head>
+<body>
+    <script>
+  AOS.init();
+</script>
+    <div   data-aos="zoom-in-up">
+hello
+    </div>
+    <!--
+      transform :
+
+      2D transform:
+      translate :values are passed as px
+      translateX:
+      translateY
+
+
+      rotate:vaule is passed as deg
+
+      scale : enlarging (0-3)
+      scaleX:
+      scaleY
+
+      skew :tilting deg
+      skewX
+      skewY
+
+      3D transform:
+      rotateX
+      rotateY
+      rotateZ
+    
+    -->
+    
+</body>
+</html>

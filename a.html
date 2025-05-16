@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .abc{
+            display: flex;
+        }
+        @media(min-width:1024px){
+            h1{
+                color:red;
+                text-shadow: 20px 10px 5px rgb(236, 129, 129);
+            }
+            p{
+                color:green;
+                font-size:20px;
+            }
+        }
+        @media(min-width:769px) and (max-width:1023px){
+            h1{
+                color:blue;
+                background-color: aquamarine;
+            }
+            p{
+                color: blueviolet;
+                font-size:30px;
+            }
+        }
+
+        @media(max-width:768px){
+            .abc{
+                display: block;
+            }
+            p{
+                font-size:30px;
+                color: rgb(255, 94, 0);
+                background-color: rgb(240, 244, 157);
+                /* text-shadow: 10px 20px 10px rgb(246, 140, 54); */
+                font-weight: bold;
+                margin-top:80px;
+                margin-bottom: 90px;
+            }
+            h1{
+                color:brown;
+                background-color: aquamarine;
+                text-shadow: 20px 30px 3px rgb(242, 136, 136);
+            }
+            img{
+                width:100%;
+                height:auto;
+                border:5px solid green;
+                box-shadow:20px 10px 90px rgb(123, 211, 123)
+            }
+        }
+    </style>
+</head>
+<body>
+    <script>
+        AOS.init();
+      </script>
+<div  style="height:200px;width:400px;background-color: aquamarine;"  data-aos="zoom-in-up">
+
+</div>
+
+    <center><h1>this is a page responsive with media query</h1></center>
+    <div class="abc">
+      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea distinctio harum, porro veritatis ullam provident accusamus ex. Quidem quibusdam error nesciunt delectus et est voluptas. Rem soluta suscipit debitis repudiandae.</p>
+      <img src="https://images.unsplash.com/photo-1745750747233-c09276a878b3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxmZWF0dXJlZC1waG90b3MtZmVlZHwyMnx8fGVufDB8fHx8fA%3D%3D" alt="">
+    </div>
+</body>
+</html>
