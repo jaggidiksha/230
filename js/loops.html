@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // let number;
+        // do{
+        //    number= prompt("enter a number grater than 10")
+        // }
+        // while(number<=10)
+        // console.log(number)
+
+
+        // for-in  : iterate over iterable objects 
+
+        // syntax :
+        // for (variable in Objectname){
+        //     // code block to be exceuted
+        // }
+  
+
+        let qw={
+            name:"john",
+            age:24,
+            occupation:"developer"
+        }
+        // to get key
+        for (let x in qw){
+            console.log(x)
+        }
+        // to get values 
+        for (let x in qw){
+            console.log(qw[x])
+        }
+        // to get both :
+        for ( x in qw){
+            console.log(x,qw[x])
+        }
+
+
+        let arr=[2,3,4,5,6]
+        // to get index 
+        for (y in arr){
+            console.log(y)
+        }
+        // to get elements
+        for (y in arr){
+            console.log(arr[y])
+        }
+
+        // for-of : it iterate over the values of iterable objects 
+        // syntax:
+        // for(variable of Objectname){
+            // code block to execute 
+        // }
+
+        let ary=["car","bus","train"]
+        for (let x of ary){
+            console.log(x)
+        }
+
+
+        let str="car bus train"
+        for (x of str){
+            console.log(x)
+        }
+        // forEach : used to perform operation on each element of an array 
+
+        let ar=[2,3,4,5,6]
+         ar.forEach(function(a){
+           console.log(a*2)
+         })
+
+        // iterable objects : on which loop can work
+        // eg :  string, array , objects 
+
+        // non-iterable objects : on which loop doesnot work 
+        // eg: number, boolean 
+
+
+
+        function abc (objj){
+          for (x in objj){
+            console.log(x,objj[x])
+          }
+        }
+
+        let obj={
+            name:"john",
+            age:23,
+            occupation:"developer"
+        }
+        abc(obj)
+    </script>
+    
+</body>
+</html>
