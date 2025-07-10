@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <p  class="text">hello html</p>
+        <p class="text">hello javascript</p>
+    </div>
+
+    <script>
+     let para=   document.querySelector(".text");
+     console.log(para.textContent)
+
+
+    let data= document.querySelectorAll(".text")
+      data.forEach((paragraph)=>{
+        console.log(paragraph.textContent)
+      })
+
+
+    let ar=[2,3]
+
+    // ar.forEach(function(x){
+    //        console.log(x*2)
+    // })
+
+
+    // ar.forEach((y)=>{
+    //     console.log(y*2)
+    // })
+
+
+    </script>
+</body>
+</html>
